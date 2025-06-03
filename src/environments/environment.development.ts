@@ -1,3 +1,3 @@
 export const environment = {
-  baseUrl: 'https://atmosfera-soltec.com:4343',
+  baseUrl: 'http://192.168.68.105:7419/api',
 };

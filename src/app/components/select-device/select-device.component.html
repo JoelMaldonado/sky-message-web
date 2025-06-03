@@ -1,0 +1,24 @@
+<h2>Celulares conectados:</h2>
+<div class="grid grid-cols-1 gap-6 p-6 sm:grid-cols-2 lg:grid-cols-3">
+  @for (phone of phones; track $index) {
+  <div
+    class="flex flex-col items-center p-5 text-center bg-white shadow-md rounded-2xl"
+  >
+    <img
+      src="https://realplaza.vtexassets.com/arquivos/ids/35354789/image-c6aa2d08727f4d8f8c7b660ff340ca2d.jpg?v=638488284781330000"
+      alt="Teléfono"
+      class="w-24 h-auto mb-4"
+    />
+    <h2 class="text-lg font-semibold">Samsung {{ phone }}</h2>
+    <p class="text-sm text-gray-500">
+      Estado: <span class="font-medium text-green-500">Disponible</span>
+    </p>
+    <p class="mt-1 text-xs text-gray-400">ID: abc123</p>
+    <button
+      class="px-4 py-2 mt-4 text-white transition-all bg-blue-600 rounded-xl hover:bg-blue-700"
+    >
+      Conectar
+    </button>
+  </div>
+  }
+</div>
